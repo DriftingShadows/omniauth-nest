@@ -2,8 +2,6 @@
 
 Strategy to authenticate with Nest via OAuth2 in OmniAuth
 
-Get your API key at the [Nest Developer Portal][portal].
-
 For more details, read the [Nest authorization documentation][auth-docs].
 
 ## Install
@@ -25,10 +23,16 @@ bundle install
 1. Clone this repo and `cd` into it
 2. `bundle install` (Required [bundler gem](http://bundler.io/))
 3. `cd examples`
-4. Set environment variables for NEST_ID and NEST_SECRET
+4. Log in to the [Nest Developer portal][portal] to get your OAuth credentials and to set your redirect URI.  
+   Set your OAuth client ID and client secret as environment variables:
+``` sh
+export NEST_ID='Your OAuth client ID here'
+export NEST_SECRET='Your OAuth client secret here'
+```
 5. Set redirect URI to http://localhost:9292/auth/nest/callback
 6. `bundle exec rackup`
 7. Open http://localhost:9292 in your browser and follow the links
+
 
 ## Usage
 
@@ -54,5 +58,5 @@ See [CONTRIBUTING](CONTRIBUTING.md) for more information on how to get started.
 
 Apache 2.0 - See [LICENSE](LICENSE) for more information.
 
-[portal]: https://developer.nest.com/clients
+[portal]: https://console.developers.nest.com
 [auth-docs]: https://developer.nest.com/documentation/cloud/authorization-overview
