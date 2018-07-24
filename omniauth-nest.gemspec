@@ -17,7 +17,7 @@
 require File.expand_path(File.join('..', 'lib', 'omniauth', 'nest', 'version'), __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.add_dependency 'omniauth', '~> 1.0'
+  gem.add_dependency 'omniauth', '~> 1.8'
 
   gem.authors       = ['David W. Keith']
   gem.email         = ['dwk@nestlabs.com']
@@ -29,7 +29,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
   gem.version       = OmniAuth::Nest::VERSION
 
-  gem.add_runtime_dependency 'omniauth-oauth2', '~> 1.1'
+  gem.add_runtime_dependency 'omniauth-oauth2', '~> 1.5'
 
   gem.add_development_dependency 'rake'
 end
